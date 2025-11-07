@@ -19,32 +19,29 @@ namespace Tyuiu.YushkovaES.Sprint4.Task5.V4
             Console.WriteLine("**************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
             Console.WriteLine("**************************************************************************");
-            Random random = new Random();
-            int[,] matrix = new int[5, 5];
+            int startValue = -4;
+            int stopValue = 6;
+            Console.WriteLine("Диапазон значений: от " + startValue + " до " + stopValue);
 
-            Console.WriteLine("Матрица 5x5 (случайные значения от -4 до 6):");
-            for (int i = 0; i < 5; i++)
-            {
-                for (int j = 0; j < 5; j++)
-                {
-                    matrix[i, j] = random.Next(-4, 7);
-                    Console.Write(matrix[i, j] + " ");
-                }
-                Console.WriteLine();
 
-            }
-
-                Console.WriteLine("**************************************************************************");
+            Console.WriteLine("**************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
             Console.WriteLine("**************************************************************************");
-                int result = ds.Calculate(matrix); // Теперь возвращает int
-                Console.WriteLine("Количество четных элементов в матрице = " + result);
+            int[,] matrix = new int[5, 5] {
+                {-4,  2, -3,  5,  0},
+                { 6, -1,  3, -2,  4},
+                { 1, -4,  2,  6, -3},
+                { 0,  3,  5, -2,  1},
+                { 4, -1,  6,  3,  2}
+            };
 
-                Console.ReadKey();
+            int result = ds.Calculate(matrix);
+            Console.WriteLine("Количество четных элементов в матрице = " + result);
+
+            Console.ReadKey();
 
 
-
-                Console.ReadKey();
+           
         }
     }
 }
