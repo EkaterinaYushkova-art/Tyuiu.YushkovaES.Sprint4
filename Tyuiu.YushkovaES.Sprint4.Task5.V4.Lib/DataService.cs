@@ -10,19 +10,19 @@ namespace Tyuiu.YushkovaES.Sprint4.Task5.V4.Lib
             int rows = matrix.GetLength(0);
             int columns = matrix.GetLength(1);
 
-            Console.WriteLine("Четные элементы:");
+           
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
                     if (matrix[i, j] % 2 == 0)
                     {
-                        Console.Write(matrix[i, j] + " ");
+                       
                         count++;
                     }
                 }
             }
-            Console.WriteLine();
+            
             return count;
 
 

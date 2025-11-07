@@ -19,9 +19,7 @@ namespace Tyuiu.YushkovaES.Sprint4.Task5.V4
             Console.WriteLine("**************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
             Console.WriteLine("**************************************************************************");
-            int startValue = -4;
-            int stopValue = 6;
-            Console.WriteLine("Диапазон значений: от " + startValue + " до " + stopValue);
+            
 
 
             Console.WriteLine("**************************************************************************");
